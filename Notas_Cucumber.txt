@@ -1,0 +1,19 @@
+INSTRUÇÕES DE TRABALHO E COMANDOS PARA PROJETO EM CUCUMBER
+
+- Primeiro para começar um projeto em ruby executar o comando bundle init
+- Será gerado um arquivo chamado 'Gemfile' onde será centralizada as dependencias do seu projeto
+- Pode se manter source "https://rubygems.org"
+- Adicionar a gem do rspec (gem "rspec", "3.9.0") será o motor da aplicação de testes
+- Adicionar a gem do Capybara (gem "cucumber") é a interface de interação com a webapp
+- Após alterar o Gemfile, executar o comando 'bundle install' para instalar as dependencias.
+- Para iniciar o projeto em cucumber executar comando: cucumber --init. serão geradas a pastas e arquivos:
+        features
+        features/step_definitions
+        features/support
+        features/support/env.rb
+- Depois de iniciar um projeto em cucumber, na pasta \features\support\ 
+  criar um arquivo de biblioteca exemplo: exemplo.feature
+- No arquivo .feature vc irá estabelecer as funcionalidades e cenários de teste
+- Ao descrever os cenários e os passos de teste podemos executar a aplicação
+- para executar um projeto em cucumber, comando: cucumber
+- Se por acaso não houver os passos definidos o cucumber não executara, mas indicara qual deve ser a programação esperada
