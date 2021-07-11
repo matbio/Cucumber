@@ -16,4 +16,9 @@ INSTRUÇÕES DE TRABALHO E COMANDOS PARA PROJETO EM CUCUMBER
 - No arquivo .feature vc irá estabelecer as funcionalidades e cenários de teste
 - Ao descrever os cenários e os passos de teste podemos executar a aplicação
 - para executar um projeto em cucumber, comando: cucumber
-- Se por acaso não houver os passos definidos o cucumber não executara, mas indicara qual deve ser a programação esperada
+- Se por acaso não houver os passos definidos o cucumber não executara, mas indicara qual deve ser a programação de cada espaço esperada
+
+#ATENÇÃO - Para utilizar classes como pages deve ser inserido na classe as DSL do capybara, Exemplo:
+  class TestPage
+    include Capybara::DSL
+  end
