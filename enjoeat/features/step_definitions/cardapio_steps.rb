@@ -10,7 +10,6 @@ Então('eu vou ver os produtos diponiveis no cardápio') do |table|
     produtos = all('.menu-item-info-box')
     products_data = table.hashes
 
-    puts produtos.size
     products_data.each_with_index do |value, index|
         expect(produtos[index]).to have_text value['nome'].upcase
         expect(produtos[index]).to have_text value['descricao']
@@ -18,6 +17,13 @@ Então('eu vou ver os produtos diponiveis no cardápio') do |table|
     end
 end
 
-Então('vou verificar que meu carrinho apresenta a mensagem {string}') do |carrinho_vazio|
-    expect(find('#cart')).to have_text carrinho_vazio
-end
+Então('eu vou ver os detalhes categoria, descrição e horários.') do |table| 
+    infos = table.rows_hash
+    details = find('#restaurant')
+    expect(details).to have_text infos['categoria']
+    expect(details).to have_text infos['descricao']
+    expect(details).to have_text infos['horarios']
+    expect(details).to have_text infos['nome']
+    expect(details).to have_text infos['avaliacao']
+        
+end                                                                         
