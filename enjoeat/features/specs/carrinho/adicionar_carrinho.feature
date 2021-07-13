@@ -1,5 +1,5 @@
 #language: pt
-@restaurante_selecionado
+@restaurante_BreadEBakery
 Funcionalidade: Adicionar ao carrinho
     Para que eu possa finalizar uma compra
     Sendo um cliente que já escolheu o que comer

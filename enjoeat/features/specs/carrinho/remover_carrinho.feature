@@ -1,5 +1,5 @@
 #language: pt
-@restaurante_selecionado
+@restaurante_BreadEBakery
 Funcionalidade: Remover do carrinho
     Para que eu possa manter meu carrinho apenas com itens desejados
     Sendo um cliente que dessitiu de um ou mais produtos

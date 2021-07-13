@@ -1,11 +1,9 @@
 Dado("que temos os seguintes restaurantes") do |table|
   @restaurant_data = table.hashes
 end
-
 Quando("acesso a lista de restaurantes") do
   @rest_list_page.visit_rest
 end
-
 Então("devo ver todos os restaurantes desta lista") do
   restaurants =  @rest_list_page.all_rest
 
